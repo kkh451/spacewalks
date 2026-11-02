@@ -1,0 +1,47 @@
+## Pre-requisites
+
+Spacewalks was developed using Python version 3.12.
+
+To install and run Spacewalks you will need to have Python 3 installed.
+You will also need the following libraries (minimum versions in brackets):
+
+- [NumPy](https://www.numpy.org/) >=2.0.0 - The Spacewalks test suite uses NumPy's statistical functions
+- [Matplotlib](https://matplotlib.org/stable/index.html) >=3.0.0  - Spacewalks uses Matplotlib to make plots
+- [pytest](https://docs.pytest.org/en/8.2.x/#) >=8.2.0  - Spacewalks uses Pytest for testing
+- [pandas](https://pandas.pydata.org/) >= 2.2.0 - Spacewalks uses Pandas for data frame manipulation
+
+## Installation instructions
+
+Clone the Spacewalks repository to your local machine using Git.
+If you don't have Git installed, you can download it from the official Git website.
+
+`
+$ git clone https://github.com/your-repository-url/spacewalks.git
+$ cd spacewalks
+`
+
+Install the necessary dependencies:
+`
+$ python3 -m pip install -r requirements.txt
+`
+
+- To ensure everything is working correctly, run the tests using Pytest.
+
+`
+$ python3 -m pytest
+`
+
+## Usage Example
+
+To run an analysis using the `eva_data_analysis.py` script from the command line terminal, do:
+
+`
+# Usage Examples
+$ python3 eva_data_analysis.py data/eva-data.json results/eva-data.csv
+`
+
+The first argument is the path to the JSON data file.
+The second argument is the path to the CSV output file.
+
+If the code runs successfully, you should get the resulting plot in `results/cumulative_eva_graph.png`
+
